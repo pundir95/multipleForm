@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.circle{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.circleItem{
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.circleItem::after{
+  content: '';
+  position: absolute;
+  width: 175px;
+  border: 1px solid black;
+  top:10px;
+  left:29px;
+}
+
+.stepColor{
+  background-color: green;
+}
