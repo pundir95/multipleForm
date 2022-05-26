@@ -19,10 +19,10 @@ const StepCount=(props:IProps)=>{
         <>
         <div className="circle mb-3">
            {
-               circleData.map((data,index)=>{
+               circleData.map((data1,index)=>{
                    return (
                        <>
-                       <div className={`circleItem ${ formValue.step==index || data.show?'stepColor':''}`}>{data.numberDisplay?<BsCheck style={{color:'#fff' ,fontSize: "1.5em"}}/>: data.number}</div>
+                       <div className={`circleItem ${ formValue.step==index || data1.show?'stepColor':''}`}>{data1.numberDisplay?<BsCheck style={{color:'#fff' ,fontSize: "1.5em"}}/>: data1.number}</div>
                        </>
                    )
                })
